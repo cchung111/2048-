@@ -22,13 +22,13 @@ if the player chooses w (i.e. up) :
 |&nbsp; 4 &nbsp;|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
 \---------------------  
 \---------------------  
-|&nbsp; 2 &nbsp;|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
+|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
 \---------------------  
 \---------------------  
-|&nbsp; 2 &nbsp;|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
+|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
 \---------------------  
 \---------------------  
-|&nbsp; 2 &nbsp;|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
+|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
 \---------------------  
 After this, a random tile of number 2 or 4 will appear in a random empty position of the grid. Then player chose a direction again and the the preceding repeats until the player get 2048 (which means the player wins) or there is no further possible move (which means game over).
 
