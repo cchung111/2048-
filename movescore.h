@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-void move(int gamedata[4][4], int & s) {
+void move(int gamedata[4][4], int & s) 	// move the tiles and combine the tiles if any according to player's input and update the score, input: board array, score, player input in the function, output: updated array and score 
+{
 	char i;
 	cout<<"Please enter w/a/s/d to move the tiles: ";
 	//read in a char  "a"left "s"down "d"right "w"up

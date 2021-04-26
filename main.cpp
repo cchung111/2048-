@@ -17,7 +17,7 @@ struct user     //struct to store player's name and highscore
     char name[10];
 };
 
-void normalmode(int & s, int gamedata[4][4])
+void normalmode(int & s, int gamedata[4][4])    //to play the game in normal difficulty , input: score and board array
 {
     s = 0;
     int first = 1, leave;
@@ -52,7 +52,7 @@ void normalmode(int & s, int gamedata[4][4])
     cout<<"Gameover !"<<endl;
 }
 
-void hardmode (int & s, int gamedata[4][4])
+void hardmode (int & s, int gamedata[4][4])     // to play the game in hard difficulty , input: board array and score
 {
     s = 0;
     int first = 1, leave;
@@ -88,7 +88,7 @@ void hardmode (int & s, int gamedata[4][4])
     cout<<"Gameover !"<<endl;
 }
 
-void printrecord(vector<user> records)      // print top 10 records
+void printrecord(vector<user> records)      // print top 10 records, input: vector of users, output: print out the records
 {
     cout<<endl;
     cout<<"TOP 10 Records"<<endl;
@@ -104,12 +104,12 @@ void printrecord(vector<user> records)      // print top 10 records
     }
 }
 
-bool operator <(const user & a, const user & b)     // to help sorting of the vectors of user
+bool operator <(const user & a, const user & b)     // to help sorting of the vectors of user, input: two users, output: true/false
 {
     return (a.highscore < b.highscore);
 }
 
-void updaterecord(vector<user> & records,int & score)   //let player input their name after breaking record and update the records;
+void updaterecord(vector<user> & records,int & score)   //let player input their name after breaking record and update the records, input: vector of users and score
 {
         user a;
         a.highscore = score;
@@ -117,7 +117,7 @@ void updaterecord(vector<user> & records,int & score)   //let player input their
         cin>>a.name;
         records.pop_back();
         records.push_back(a);
-        sort(records.begin(), records.end());
+        sort(records.begin(), records.end());   // update the vector
 }
 
 int main() {

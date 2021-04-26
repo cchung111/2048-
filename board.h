@@ -6,7 +6,8 @@
 using namespace std;
 
 
-void randomtile(int board[4][4]) {
+void randomtile(int board[4][4])    // generate a random tile of 2 or 4 on an random empty tile, input: the board array, output: updated array
+{
     int empty[16][2];
     int a = 0, b = 0;
     for (int i = 0; i < 4; ++i) {
@@ -26,7 +27,7 @@ void randomtile(int board[4][4]) {
         board[empty[tile][0]][empty[tile][1]] = 4;
 }
 
-void printboard(int board[4][4])    //print out the board
+void printboard(int board[4][4])    //print out the board, input: the board array, output: print the board out
 {
     cout<<"--------------------"<<endl;
     for (int i = 0; i < 4; ++i) {
@@ -42,7 +43,7 @@ void printboard(int board[4][4])    //print out the board
     }
 }
 
-void initialboard(int gamedata[4][4])   //initialize the board
+void initialboard(int gamedata[4][4])   //initialize the board by making all tiles 0, input: the board array, output: updated array
 {
 	for (int i; i < 4; i++)
 	{

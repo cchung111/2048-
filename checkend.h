@@ -2,7 +2,8 @@
 using namespace std;
 
 
-bool fullboard(int gamedata[4][4]) {
+bool fullboard(int gamedata[4][4]) 	// check if the board is full, input: the board array, output: boolean value true/false
+{
 
 	int a = 1; // 1 means full, 0 means having empty block
 
@@ -27,7 +28,7 @@ bool fullboard(int gamedata[4][4]) {
 }
 
 
-bool gameover(int gamedata[4][4])
+bool gameover(int gamedata[4][4])	// to check if the player lost the game, input: the board array, output: boolean value true/false
 {
 	int fail = 1; //1 means not having 2 near same numbers
 
@@ -69,7 +70,7 @@ bool gameover(int gamedata[4][4])
 	}
 }
 
-bool have2048(int gamedata[4][4])	// to check if there is 2048 in the board
+bool have2048(int gamedata[4][4])	// to check if there is 2048 in the board, input: the board array, output:boolean value true/false
 {
 	for (int i = 0; i < 4; i++)
 	{

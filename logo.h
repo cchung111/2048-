@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void printlogo() {
+void printlogo() // print the logo of 2048 , input:nothing, output: print the logo
+{
     cout<<"---------------------------------------------------------------------------\n";
     cout<<"   ______________     ____________          ____  ____     ____________    \n";
     cout<<"  /  _________   \\   /            \\        /   / |   |    /            \\   \n";
