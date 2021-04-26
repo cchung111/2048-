@@ -8,12 +8,9 @@ The game starts with a 4 times 4 gird and two tiles numbered 2 appear in random 
 \---------------------  
 |&nbsp; 2 &nbsp;|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
 \---------------------  
+|&nbsp; 2 &nbsp;|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |    
 \---------------------  
-|&nbsp; 2 &nbsp;|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
-\---------------------  
-\---------------------  
-|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
-\---------------------  
+|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |   
 \---------------------  
 |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
 \---------------------  
@@ -21,12 +18,9 @@ if the player chooses w (i.e. up) :
 \---------------------  
 |&nbsp; 4 &nbsp;|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
 \---------------------  
+|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |   
 \---------------------  
-|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
-\---------------------  
-\---------------------  
-|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
-\---------------------  
+|&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |   
 \---------------------  
 |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |&emsp; &nbsp; |  
 \---------------------  
@@ -35,7 +29,11 @@ After this, a random tile of number 2 or 4 will appear in a random empty positio
 ## Features:
 1. Tiles will randomly appear on the grid. (code requirement 1 Generation of random game sets or events, using rand() and srand() in stdlib)
 2. The game can be continued after reaching 2048. 
-3. Top 10 highest score will be recorded. (code requirement 4 File i/o , the scores can be stored in a file as integers and can be read afterwards)
-4. Game can be saved and continued. (code requirement 4 File i/o , the 4 times 4 grid can be output as a series of integers and can be loaded again)
-5. New game mode (tbc)
+3. Player can input their name if their scores are higher than the top 10th score. (code requirement 2 Data structures for storing game status, struct user is used for storing the players' names and scores)
+4. The board is stored in an integer array for simplicity (code requirement 2 Data structures for storing game status)
+5. Top 10 highest score will be recorded. (code requirement 3 dynamic memory management, vectors are used to store the top 10 player's score and name & code requirement 4 File i/o , the scores can be stored in a file as integers and can be read afterwards)
+6. Hard mode is added , in which two random tiles will be generated each turn. 
+7. functions are separated in different header files for easier management and change of value (code requirement 5 Program codes in multiple files)
 
+## Quick start
+Compile the main.cpp file and run the compiled file.
